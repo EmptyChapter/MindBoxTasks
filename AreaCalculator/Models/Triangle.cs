@@ -28,6 +28,23 @@
         public bool IsEquilateral =>
             Side1 == Side2 && Side2 == Side3;
 
+        /// <summary>
+        /// Gets indication of whether or not triangle is right.
+        /// </summary>
+        public bool IsRight
+        {
+            get
+            {
+                var legs = GetLegs();
+                var hyp  = GetHypotenuse();
+
+                var sum  = legs.Select(s => Math.Pow(s, 2)).Sum();
+
+                // Pythagorean theorem
+                return hyp == Math.Sqrt(sum);
+            }
+        }
+
         #endregion
 
         #region Constructors
@@ -69,14 +86,38 @@
 
         #endregion
 
+        #region Private Methods
+
+        // Returns list of sides.
+        private double[] ToList() =>
+            new[] { Side1, Side2, Side3 }.Order().ToArray();
+
+        // Returns legs of right triangle.
+        private double[] GetLegs() =>
+            ToList().Take(2).ToArray();
+
+        // Returns hypotenuse of right triangle.
+        private double GetHypotenuse() =>
+            ToList().Last();
+
+        #endregion
+
         #region Public Methods
 
         public double GetArea()
         {
+            if (IsRight)
+            {
+                var mult = 1d;
+                foreach (var leg in GetLegs()) mult *= leg;
+
+                return mult * .5;
+            }
+
             if (IsEquilateral)
             {
-                var eqResult = Math.Pow(Side1, 2) * Math.Sqrt(3) / 4;
-                return Math.Round(eqResult, 2);
+                var result = Math.Pow(Side1, 2) * Math.Sqrt(3) / 4;
+                return Math.Round(result, 2);
             }
 
             // Heron`s formula

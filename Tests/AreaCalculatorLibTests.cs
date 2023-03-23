@@ -29,10 +29,21 @@ namespace Tests
         }
 
         /// <summary>
+        /// Test for right triangular shape.
+        /// </summary>
+        [TestMethod]
+        public void TestRightTriangle()
+        {
+            IShape triangle = new Triangle(15, 17, 8);
+
+            Assert.AreEqual(60, triangle.GetArea(2));
+        }
+
+        /// <summary>
         /// Test for equilateral triangular shape.
         /// </summary>
         [TestMethod]
-        public void TestEquilateralCircle()
+        public void TestEquilateralTriangle()
         {
             IShape triangle = new Triangle(4);
 
