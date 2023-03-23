@@ -1,0 +1,9 @@
+SELECT  Prods.Title AS [Product Title], Cats.Title AS [Category Title]
+
+FROM    dbo.Products AS Prods
+
+FULL OUTER JOIN dbo.ProductCategories AS ProdCuts
+    ON Prods.ID = ProdCuts.ProductID
+
+LEFT OUTER JOIN dbo.Categories AS Cats
+    ON ProdCuts.CategoryID = Cats.ID

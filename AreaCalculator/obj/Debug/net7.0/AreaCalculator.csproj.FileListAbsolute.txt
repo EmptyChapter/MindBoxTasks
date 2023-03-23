@@ -1,0 +1,12 @@
+D:\Projects\VisualStudio\MindBoxTasks\AreaCalculator\bin\Debug\net7.0\AreaCalculator.deps.json
+D:\Projects\VisualStudio\MindBoxTasks\AreaCalculator\bin\Debug\net7.0\AreaCalculator.dll
+D:\Projects\VisualStudio\MindBoxTasks\AreaCalculator\bin\Debug\net7.0\AreaCalculator.pdb
+D:\Projects\VisualStudio\MindBoxTasks\AreaCalculator\obj\Debug\net7.0\AreaCalculator.csproj.AssemblyReference.cache
+D:\Projects\VisualStudio\MindBoxTasks\AreaCalculator\obj\Debug\net7.0\AreaCalculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\VisualStudio\MindBoxTasks\AreaCalculator\obj\Debug\net7.0\AreaCalculator.AssemblyInfoInputs.cache
+D:\Projects\VisualStudio\MindBoxTasks\AreaCalculator\obj\Debug\net7.0\AreaCalculator.AssemblyInfo.cs
+D:\Projects\VisualStudio\MindBoxTasks\AreaCalculator\obj\Debug\net7.0\AreaCalculator.csproj.CoreCompileInputs.cache
+D:\Projects\VisualStudio\MindBoxTasks\AreaCalculator\obj\Debug\net7.0\AreaCalculator.dll
+D:\Projects\VisualStudio\MindBoxTasks\AreaCalculator\obj\Debug\net7.0\refint\AreaCalculator.dll
+D:\Projects\VisualStudio\MindBoxTasks\AreaCalculator\obj\Debug\net7.0\AreaCalculator.pdb
+D:\Projects\VisualStudio\MindBoxTasks\AreaCalculator\obj\Debug\net7.0\ref\AreaCalculator.dll
